@@ -7,7 +7,11 @@ This program is written in python and uses four libraries, most of which are par
 In order to run the script, cd into the file with it and then use either the command
 
 py annotateAndroidPNGTool.py <app.package> <screen #>
+
+
 or
+
+
 python3 annotateAndroidPNGTool.py <app.package> <screen #>
 
 with two possible command line arguments, the first being the app.package name and the second being the screen number. If there is no screen number, leave the second command line argument blank. 
