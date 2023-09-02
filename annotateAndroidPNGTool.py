@@ -17,8 +17,8 @@
 #   by command line arguments, and parses the XML,#
 #   in order to get a usuable list of pixel bounds#
 #   of leaf node GUI components. Then, it uses PIL#
-#   to load the png and draw an about 4-9 pixel   #
-#   thick outline of the component. I made it 4-8 #
+#   to load the png and draw an about 4-10 pixel  #
+#   thick outline of the component. I made it 4-10#
 #   pixels thick in order for the outline to be   #
 #   very obvious and visible. Then, the image is  #
 #   saved with the same name as the original with #                                       
@@ -121,11 +121,11 @@ def main():
    
         #outline each leafnode
         for x in range(int(currboundslist[0][0]), int(currboundslist[1][0])):
-            for y in range (int(currboundslist[0][1])-2, int(currboundslist[0][1])+2 ):
+            for y in range (int(currboundslist[0][1])-3, int(currboundslist[0][1])+3 ):
                 if y<0:
                     y=0
                 im.putpixel( (x,y), (225,156,53))
-            for y in range (int(currboundslist[1][1])-2, int(currboundslist[1][1]) +2):
+            for y in range (int(currboundslist[1][1])-3, int(currboundslist[1][1]) +3):
                 if y >= im.height:
                     y=im.height-1
                 im.putpixel( (x,y), (225,156,53))
