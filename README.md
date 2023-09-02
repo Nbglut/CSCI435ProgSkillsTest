@@ -14,4 +14,7 @@ or
 
 python3 annotateAndroidPNGTool.py <app.package> <screen #>
 
-with two possible command line arguments, the first being the app.package name and the second being the screen number. If there is no screen number, leave the second command line argument blank. 
+
+
+depending on your version of python. There are two possible command line arguments, the first being the app.package name and the second being the screen number. If there is no screen number, leave the second command line argument blank. 
+The Output folder contains all of the annotated pngs, and the Data folder contains all of the data files. The PIL folder contains the entirity of the PIL library. 
